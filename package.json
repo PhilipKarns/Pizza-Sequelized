@@ -1,0 +1,28 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "an app using Express, MySQL, Node, and Handlebars that allows users to enter the type of pizza they want to eat, which is added to a database, and displays on the screen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakmania10/pizza.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pakmania10/pizza/issues"
+  },
+  "homepage": "https://github.com/pakmania10/pizza#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.8",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.4"
+  }
+}

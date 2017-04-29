@@ -1,0 +1,48 @@
+/*
+*/
+
+body {
+	background-color: #00BFFF;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	background-color: white;
+	border-radius: 25px;
+}
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+
+    
+}
+
+.half-width {
+    width: 50%;
+    float: left;
+    text-align: center;     
+}
+
+img {
+	text-align: center;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+button {
+	border-radius: 50px;	
+}
+
+input {
+	border-radius: 25px;
+}
