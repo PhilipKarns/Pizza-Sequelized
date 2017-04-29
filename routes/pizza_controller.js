@@ -1,9 +1,6 @@
-var express = require("express");
 
-var router = express.Router();
 
-// Import the model (pizza.js) to use its database functions.
-var pizza = require("../models/pizza.js");
+
 
 //ROUTES CODE GOES HERE
 // Create all our routes and set up logic within those routes where required.
@@ -38,6 +35,3 @@ router.put("/:id", function(req, res) {
     res.redirect("/");
   });
 });
-
-// Export routes for server.js to use.
-module.exports = router;
