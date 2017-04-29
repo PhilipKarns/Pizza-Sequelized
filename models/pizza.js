@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     date: {
       type: DataTypes.DATE,
-      defaultValue: Sequelize.NOW,
+      defaultValue: DataTypes.NOW,
       allowNull: false
     }
   });//define

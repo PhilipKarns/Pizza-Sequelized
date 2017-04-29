@@ -26,14 +26,16 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Override with POST having ?_method=DELETE
 app.use(methodOverride("_method"));
 
+
+
 //handlebars boilerplate
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Routes
-// =============================================================
-require("./app/routes/api-routes.js")(app);
-require("./app/routes/html-routes.js")(app);
+// Routes =============================================================
+
+require("./routes/html-routes.js")(app);
+//require("./routes/api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync().then(function() {
@@ -41,3 +43,15 @@ db.sequelize.sync().then(function() {
 	  console.log("Listening on PORT " + port);
 	});//listener
 });//sequelize sync
+
+
+// // Create `ExpressHandlebars` instance with a default layout.
+// handlebars = exphbs.create({
+//     defaultLayout: 'main',
+//     extname      : '.html', //set extension to .html so handlebars knows what to look for
+// });
+
+// // Register `hbs` as our view engine using its bound `engine()` function.
+// // Set html in app.engine and app.set so express knows what extension to look for.
+// app.engine('html', handlebars.engine);
+// app.set('view engine', 'html');
