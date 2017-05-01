@@ -33,8 +33,11 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Routes =============================================================
+// Import routes and give the server access to them.
+var routes = require("./routes/pizza_controller.js");
 
-require("./routes/html-routes.js")(app);
+app.use("/", routes);
+//require("./routes/html-routes.js")(app);
 //require("./routes/api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our express app
